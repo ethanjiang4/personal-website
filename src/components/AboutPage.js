@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { fade, delayFade } from './fades';
 
 const AboutPage = () => {
     return(
@@ -25,6 +26,8 @@ const MainTitle = styled.div`
 
     position: relative;
     margin-top: 10%;
+
+    animation: 1.5s ${fade};
 `;
 
 const Subtitle = styled.div`
@@ -38,6 +41,8 @@ const Subtitle = styled.div`
     margin-top: 15px;
     padding-left: 15%;
     padding-right: 15%;
+
+    animation: 2s ${delayFade};
 `;
 
 export default AboutPage;

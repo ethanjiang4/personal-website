@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { fade, delayFade } from './fades';
 
 const HomePage = () => {
     return(
@@ -25,6 +26,8 @@ const MainTitle = styled.div`
 
     position: relative;
     margin-top: 15%;
+
+    animation: 1.5s ${fade};
 `;
 
 const Subtitle = styled.div`
@@ -38,6 +41,8 @@ const Subtitle = styled.div`
     margin-top: 30px;
     padding-left: 10%;
     padding-right: 10%;
+
+    animation: 2s ${delayFade};
 `;
 
 export default HomePage;

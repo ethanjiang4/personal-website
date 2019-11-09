@@ -1,5 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import { fade, delayFade } from './fades';
 
 const ResumePage = () => {
     return(
@@ -24,6 +25,8 @@ const MainTitle = styled.div`
 
     position: relative;
     margin-top: 10%;
+
+    animation: 1.5s ${fade};
 `;
 
 export default ResumePage;

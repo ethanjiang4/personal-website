@@ -1,26 +1,22 @@
 import React, {useState} from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import Button from '@material-ui/core/Button'
 import Chip from '@material-ui/core/Chip';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import HourglassEmptyIcon from '@material-ui/icons/HourglassEmpty';
 import OpenInNewIcon from '@material-ui/icons/OpenInNew';
-import Paper from '@material-ui/core/Paper'
+import Paper from '@material-ui/core/Paper';
+import { fade, delayFade } from './fades';
+import slideInDown from 'react-animations';
+
+const slideIn = keyframes`${slideInDown}`;
 
 const ExperiencePage = () => {
     const [showExp1, setExp1] = useState(false);
     const [showExp2, setExp2] = useState(false);
     const [showExp3, setExp3] = useState(false);
     // const [showExp4, setExp4] = useState(false);
-
-    let Exp3Text = "Architected commenting and user API for hyperPad’s game sharing native hub \
-    of 10,000 users with Objective-C and Ruby on Rails.\n\
-    Optimized and deployed child healthcare application for UC Irvine’s medical \
-    research team on iOS and Android with React/React Native and Apollo GraphQL.\n\
-    Built front-end for youth job board progressive web application for Sony \
-    with React and React Redux."
-    
 
     return(
         <Wrapper>
@@ -46,14 +42,14 @@ const ExperiencePage = () => {
                     <ExpCardSubtitle>Full Stack Software Engineering Intern</ExpCardSubtitle>
                     <ExpCardDesc>London, ON, Canada</ExpCardDesc>
                     <ExpCardDesc>Fall 2019</ExpCardDesc>
-                    {showExp3 && <ExpCardDesc>
+                    {showExp3 && <MoreExpCardDesc>
                         • Architected commenting and user API for hyperPad’s game sharing native hub 
                         of 10,000 users with Objective-C and Ruby on Rails. {"\n"}
                         • Optimized and deployed child healthcare application for UC Irvine’s medical 
                         research team on iOS and Android with React/React Native and Apollo GraphQL. {"\n"}
                         • Built front-end for youth job board progressive web application for Sony 
                         with React and React Redux.{"\n"}
-                    </ExpCardDesc>}
+                    </MoreExpCardDesc>}
                     {showExp3 && <StackRow>
                         <TechChip variant="outlined" label="Apollo"/>
                         <TechChip variant="outlined" label="Objective-C"/>
@@ -75,12 +71,12 @@ const ExperiencePage = () => {
                     <ExpCardSubtitle>Software Developer Intern</ExpCardSubtitle>
                     <ExpCardDesc>Kitchener, ON, Canada</ExpCardDesc>
                     <ExpCardDesc>Winter 2019</ExpCardDesc>
-                    {showExp2 && <ExpCardDesc>
+                    {showExp2 && <MoreExpCardDesc>
                         • Team lead for cross-platform enterprise web app reaching 2000 employees.{"\n"}
                         • Replaced legacy software; sped up insurance prospecting process by 50%.{"\n"}
                         • Designed and implemented UI/UX with Angular and Ionic.{"\n"}
                         • Developed RESTful API backend with Node.js, Express, and PostgreS.{"\n"}
-                    </ExpCardDesc>}
+                    </MoreExpCardDesc>}
                     {showExp2 && <StackRow>
                         <TechChip variant="outlined" label="Angular"/>
                         <TechChip variant="outlined" label="Express"/>
@@ -101,11 +97,11 @@ const ExperiencePage = () => {
                     <ExpCardSubtitle>Jr. Network Administrator</ExpCardSubtitle>
                     <ExpCardDesc>Toronto, ON, Canada</ExpCardDesc>
                     <ExpCardDesc>Summer 2018</ExpCardDesc>
-                    {showExp1 && <ExpCardDesc>
+                    {showExp1 && <MoreExpCardDesc>
                         • Automated unlocking computers, performing status checks, and Active Directory
                         administration by developing Powershell scripts. {"\n"}
                         • Worked with over 400 clients to troubleshoot and repair hardware and software.{"\n"}
-                    </ExpCardDesc>}
+                    </MoreExpCardDesc>}
                     {showExp1 && <StackRow>
                         <TechChip variant="outlined" label="Active Directory"/>
                         <TechChip variant="outlined" label="Powershell"/>
@@ -176,6 +172,8 @@ const MainTitle = styled.div`
 
     position: relative;
     margin-top: 10%;
+
+    animation: 1.5s ${fade};
 `;
 
 const SecondaryTitle = styled.div`
@@ -186,6 +184,8 @@ const SecondaryTitle = styled.div`
     text-align: center;
 
     position: relative;
+
+    animation: 1.5s ${fade};
 `;
 
 const ExpCards = styled.div`
@@ -197,6 +197,8 @@ const ExpCards = styled.div`
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 30px;
+
+    animation: 2s ${delayFade};
 `;
 
 const ExpCard = styled(Paper)`
@@ -235,6 +237,10 @@ const ExpCardDesc = styled.div`
     white-space: pre-wrap;
 `;
 
+const MoreExpCardDesc = styled(ExpCardDesc)`
+    animation: 1s ${fade};
+`;
+
 const ShowMoreButton = styled(Button)`
     color: #ffeccf !important;
     width: 20%;
@@ -245,6 +251,7 @@ const StackRow = styled.div`
     flex-direction: row;
     margin-top: 10px;
     flex-wrap: wrap;
+    animation: 1s ${fade};
 `;
 
 const ProjectRow = styled(StackRow)`

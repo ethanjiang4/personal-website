@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { fade, delayFade } from './fades';
 import Button from '@material-ui/core/Button';
 import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -45,19 +46,8 @@ const MainTitle = styled.div`
 
     position: relative;
     margin-top: 10%;
-`;
 
-const Subtitle = styled.div`
-    font-family: Airbnb Cereal App Medium;
-    font-size: 25px;
-    color: #ffeccf;
-
-    text-align: center;
-
-    position: relative;
-    margin-top: 15px;
-    padding-left: 15%;
-    padding-right: 15%;
+    animation: 1.5s ${fade};
 `;
 
 const ContactColumn = styled.div`
@@ -67,6 +57,7 @@ const ContactColumn = styled.div`
     margin-top: 15px;
     justify-content: center;
     align-items: center;
+    animation: 2s ${delayFade};
 `;
 
 const ContactButton = styled(Button)`
