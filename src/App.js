@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
@@ -8,6 +8,9 @@ import ContactPage from './components/ContactPage';
 import Button from '@material-ui/core/Button';
 
 const App = () => {
+  useEffect(() => {
+    document.title = `Ethan Jiang`;
+  }, [true]);
   document.body.style.backgroundColor = "#212121"
   const [page, setPage] = useState(0);
   return (
