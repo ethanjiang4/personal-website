@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 const MainTitle = styled.div`
     font-family: Airbnb Cereal App Extra Bold;
     font-size: 70px;
-    color: #ffeccf;
+    color: #e6f4f5;
 
     text-align: center;
 
@@ -33,7 +33,7 @@ const MainTitle = styled.div`
 const Subtitle = styled.div`
     font-family: Airbnb Cereal App Medium;
     font-size: 25px;
-    color: #ffeccf;
+    color: #e6f4f5;
 
     text-align: center;
 

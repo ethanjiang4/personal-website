@@ -46,7 +46,7 @@ const ButtonRow = styled.div`
 const StyledButton = styled(Button)`
   font-family: Airbnb Cereal App Book !important;
   font-size: 20px !important;
-  border-color: #ffeccf !important;
+  border-color: #e6f4f5 !important;
   border-width: 1px !important;
   margin-left: 10px !important;
   color: #ffeccf !important;

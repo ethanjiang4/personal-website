@@ -40,7 +40,7 @@ const Wrapper = styled.div`
 const MainTitle = styled.div`
     font-family: Airbnb Cereal App Extra Bold;
     font-size: 70px;
-    color: #ffeccf;
+    color: #e6f4f5;
 
     text-align: center;
 
@@ -63,7 +63,7 @@ const ContactColumn = styled.div`
 const ContactButton = styled(Button)`
     font-family: Airbnb Cereal App Medium !important;
     font-size: 22px !important;
-    color: #ffeccf !important;
+    color: #e6f4f5 !important;
     margin-left: 15px !important;
     margin-bottom: 15px !important;
     width: 50% !important;

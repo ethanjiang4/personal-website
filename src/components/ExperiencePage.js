@@ -166,7 +166,7 @@ const Wrapper = styled.div`
 const MainTitle = styled.div`
     font-family: Airbnb Cereal App Extra Bold;
     font-size: 70px;
-    color: #ffeccf;
+    color: #e6f4f5;
 
     text-align: center;
 
@@ -179,7 +179,7 @@ const MainTitle = styled.div`
 const SecondaryTitle = styled.div`
     font-family: Airbnb Cereal App Extra Bold;
     font-size: 55px;
-    color: #ffeccf;
+    color: #e6f4f5;
 
     text-align: center;
 
@@ -216,14 +216,14 @@ const ExpCard = styled(Paper)`
 const ExpCardTitle = styled.div`
     font-family: Airbnb Cereal App Bold;
     font-size: 40px;
-    color: #ffeccf;
+    color: #e6f4f5;
     text-align: left;
 `;
 
 const ExpCardSubtitle = styled.div`
     font-family: Airbnb Cereal App Medium;
     font-size: 25px;
-    color: #ffeccf;
+    color: #e6f4f5;
     margin-top: 5px;
     text-align: left;
 `;
@@ -231,7 +231,7 @@ const ExpCardSubtitle = styled.div`
 const ExpCardDesc = styled.div`
     font-family: Airbnb Cereal App Book;
     font-size: 20px;
-    color: #ffeccf;
+    color: #e6f4f5;
     margin-top: 5px;
     text-align: left;
     white-space: pre-wrap;
@@ -242,7 +242,7 @@ const MoreExpCardDesc = styled(ExpCardDesc)`
 `;
 
 const ShowMoreButton = styled(Button)`
-    color: #ffeccf !important;
+    color: #e6f4f5 !important;
     width: 20%;
 `;
 
@@ -259,8 +259,8 @@ const ProjectRow = styled(StackRow)`
 `;
 
 const TechChip = styled(Chip)`
-    color: #ffeccf !important;
-    border-color: #ffeccf !important;
+    color: #e6f4f5 !important;
+    border-color: #e6f4f5 !important;
     font-family: Airbnb Cereal App Medium !important;
     font-size: 15px !important;
     padding-bottom: 1px !important;
@@ -269,11 +269,11 @@ const TechChip = styled(Chip)`
 `;
 
 const OpenNewIcon = styled(OpenInNewIcon)`
-    color: #ffeccf !important;
+    color: #e6f4f5 !important;
 `;
 
 const OpenNewButton = styled(Button)`
-    color: #ffeccf !important;
+    color: #e6f4f5 !important;
     position: absolute !important;
     top: 0px !important;
     right: 0px !important;

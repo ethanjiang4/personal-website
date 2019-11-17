@@ -34,7 +34,7 @@ const Wrapper = styled.div`
 const MainTitle = styled.div`
     font-family: Airbnb Cereal App Extra Bold;
     font-size: 70px;
-    color: #ffeccf;
+    color: #e6f4f5;
 
     text-align: center;
 
@@ -62,7 +62,7 @@ const Resume = styled.img`
 const DownloadButton = styled(Button)`
     font-family: Airbnb Cereal App Book !important;
     font-size: 20px !important;
-    color: #ffeccf !important   ;
+    color: #e6f4f5 !important   ;
     height: 60px !important;
     margin-bottom: 20px !important;
 `;
