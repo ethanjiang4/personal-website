@@ -45,7 +45,7 @@ const MainTitle = styled.div`
     text-align: center;
 
     position: relative;
-    margin-top: 10%;
+    margin-top: 8%;
 
     animation: 1.5s ${fade};
 `;
@@ -57,7 +57,7 @@ const ContactColumn = styled.div`
     margin-top: 15px;
     justify-content: center;
     align-items: center;
-    animation: 2s ${delayFade};
+    animation: 1.5s ${delayFade};
 `;
 
 const ContactButton = styled(Button)`

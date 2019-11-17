@@ -25,7 +25,7 @@ const MainTitle = styled.div`
     text-align: center;
 
     position: relative;
-    margin-top: 10%;
+    margin-top: 8%;
 
     animation: 1.5s ${fade};
 `;
@@ -42,7 +42,7 @@ const Subtitle = styled.div`
     padding-left: 15%;
     padding-right: 15%;
 
-    animation: 2s ${delayFade};
+    animation: 1.5s ${delayFade};
 `;
 
 export default AboutPage;

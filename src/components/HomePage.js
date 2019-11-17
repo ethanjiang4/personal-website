@@ -42,7 +42,7 @@ const Subtitle = styled.div`
     padding-left: 10%;
     padding-right: 10%;
 
-    animation: 2s ${delayFade};
+    animation: 1.5s ${delayFade};
 `;
 
 export default HomePage;

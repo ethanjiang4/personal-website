@@ -171,7 +171,7 @@ const MainTitle = styled.div`
     text-align: center;
 
     position: relative;
-    margin-top: 10%;
+    margin-top: 8%;
 
     animation: 1.5s ${fade};
 `;
@@ -198,7 +198,7 @@ const ExpCards = styled.div`
     margin-right: 15px;
     margin-bottom: 30px;
 
-    animation: 2s ${delayFade};
+    animation: 1.5s ${delayFade};
 `;
 
 const ExpCard = styled(Paper)`
