@@ -48,6 +48,13 @@ const Subtitle = styled.div`
     padding-right: 15%;
 
     animation: 1.5s ${delayFade};
+    
+    @media (max-width: 700px) {
+        font-family: Airbnb Cereal App Book;
+        font-size: 22px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 `;
 
 export default AboutPage;

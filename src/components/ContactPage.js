@@ -71,7 +71,7 @@ const ContactButton = styled(Button)`
     color: #fff1e0 !important;
     margin-left: 15px !important;
     margin-bottom: 15px !important;
-    width: 60% !important;
+    width: 50% !important;
     @media (max-width: 700px) {
         width: 100% !important;
         font-size: 18px !important;

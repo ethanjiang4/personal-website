@@ -18,7 +18,7 @@ const useStyles = makeStyles({
     backgroundColor: "#212121",
   },
   list: {
-    width: 200,
+    width: 185,
     backgroundColor: "#212121",
   },
   fullList: {

@@ -203,6 +203,11 @@ const SecondaryTitle = styled.div`
     position: relative;
 
     animation: 1.5s ${fade};
+
+    @media (max-width: 700px) {
+        font-size: 40px;
+        font-family: Airbnb Cereal App Bold;
+    }
 `;
 
 const ExpCards = styled.div`
@@ -211,8 +216,8 @@ const ExpCards = styled.div`
     justify-content: center;
     display: flex;
     flex-direction: column;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-bottom: 30px;
 
     animation: 1.5s ${delayFade};
@@ -221,11 +226,9 @@ const ExpCards = styled.div`
 const ExpCard = styled(Paper)`
     position: relative;
     max-width: 700px !important;
-    width: 100%;
+    width: fill-available;
     text-align: center !important;
     margin-top: 30px !important;
-    margin-left: 15px !important;
-    margin-right: 15px !important;
     padding: 15px 30px 0px 30px !important;
     background-color: #303030 !important;
 `;
@@ -286,7 +289,7 @@ const TechChip = styled(Chip)`
     font-family: Airbnb Cereal App Medium !important;
     font-size: 15px !important;
     padding-bottom: 1px !important;
-    margin-left: 10px !important;
+    margin-right: 10px !important;
     margin-top: 5px !important;
 `;
 

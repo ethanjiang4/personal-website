@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 
 const MainTitle = styled.div`
     font-family: Airbnb Cereal App Extra Bold;
-    font-size: 100px;
+    font-size: 90px;
     color: #fff1e0;
 
     text-align: center;
@@ -30,7 +30,10 @@ const MainTitle = styled.div`
     animation: 1.5s ${fade};
 
     @media (max-width: 700px) {
+        font-family: Airbnb Cereal App Bold;
         font-size: 60px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 `;
 
@@ -47,6 +50,11 @@ const Subtitle = styled.div`
     padding-right: 10%;
 
     animation: 1.5s ${delayFade};
+
+    @media (max-width: 700px) {
+        font-family: Airbnb Cereal App Book;
+        font-size: 25px;
+    }
 `;
 
 export default HomePage;
