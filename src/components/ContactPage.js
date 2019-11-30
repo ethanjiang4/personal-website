@@ -40,14 +40,19 @@ const Wrapper = styled.div`
 const MainTitle = styled.div`
     font-family: Airbnb Cereal App Extra Bold;
     font-size: 70px;
-    color: #e6f4f5;
+    color: #fff1e0;
 
     text-align: center;
 
     position: relative;
-    margin-top: 8%;
+    margin-top: 100px;
 
     animation: 1.5s ${fade};
+
+    @media (max-width: 700px) {
+        font-size: 50px;
+        margin-top: 50px;
+    }
 `;
 
 const ContactColumn = styled.div`
@@ -63,10 +68,14 @@ const ContactColumn = styled.div`
 const ContactButton = styled(Button)`
     font-family: Airbnb Cereal App Medium !important;
     font-size: 22px !important;
-    color: #e6f4f5 !important;
+    color: #fff1e0 !important;
     margin-left: 15px !important;
     margin-bottom: 15px !important;
-    width: 50% !important;
+    width: 60% !important;
+    @media (max-width: 700px) {
+        width: 100% !important;
+        font-size: 18px !important;
+    }
     height: 80px !important;
 `;
 

@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import styled, { keyframes } from 'styled-components';
+import React, { useState } from 'react';
+import styled from 'styled-components';
 import Button from '@material-ui/core/Button'
 import Chip from '@material-ui/core/Chip';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -8,9 +8,6 @@ import HourglassEmptyIcon from '@material-ui/icons/HourglassEmpty';
 import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 import Paper from '@material-ui/core/Paper';
 import { fade, delayFade } from './fades';
-import slideInDown from 'react-animations';
-
-const slideIn = keyframes`${slideInDown}`;
 
 const ExperiencePage = () => {
     const [showExp1, setExp1] = useState(false);
@@ -18,54 +15,54 @@ const ExperiencePage = () => {
     const [showExp3, setExp3] = useState(false);
     // const [showExp4, setExp4] = useState(false);
 
-    return(
+    return (
         <Wrapper>
             <MainTitle>Experience</MainTitle>
             <ExpCards>
                 <ExpCard>
-                    <OpenNewButton onClick={() => {window.open('https://joinhoney.com', '_blank')}}>
-                        <OpenNewIcon/>
+                    <OpenNewButton onClick={() => { window.open('https://joinhoney.com', '_blank') }}>
+                        <OpenNewIcon />
                     </OpenNewButton>
                     <ExpCardTitle>Honey</ExpCardTitle>
                     <ExpCardSubtitle>Software Engineering Intern (Incoming)</ExpCardSubtitle>
                     <ExpCardDesc>Los Angeles, CA, USA</ExpCardDesc>
                     <ExpCardDesc>Summer 2020</ExpCardDesc>
                     <ShowMoreButton>
-                        <HourglassEmptyIcon/>
+                        <HourglassEmptyIcon />
                     </ShowMoreButton>
                 </ExpCard>
                 <ExpCard>
-                    <OpenNewButton onClick={() => {window.open('https://hyperpad.com', '_blank')}}>
-                        <OpenNewIcon/>
+                    <OpenNewButton onClick={() => { window.open('https://hyperpad.com', '_blank') }}>
+                        <OpenNewIcon />
                     </OpenNewButton>
                     <ExpCardTitle>hyperPad</ExpCardTitle>
                     <ExpCardSubtitle>Full Stack Software Engineering Intern</ExpCardSubtitle>
                     <ExpCardDesc>London, ON, Canada</ExpCardDesc>
                     <ExpCardDesc>Fall 2019</ExpCardDesc>
                     {showExp3 && <MoreExpCardDesc>
-                        • Architected commenting and user API for hyperPad’s game sharing native hub 
+                        • Architected commenting and user API for hyperPad’s game sharing native hub
                         of 10,000 users with Objective-C and Ruby on Rails. {"\n"}
-                        • Optimized and deployed child healthcare application for UC Irvine’s medical 
+                        • Optimized and deployed child healthcare application for UC Irvine’s medical
                         research team on iOS and Android with React/React Native and Apollo GraphQL. {"\n"}
-                        • Built front-end for youth job board progressive web application for Sony 
+                        • Built front-end for youth job board progressive web application for Sony
                         with React and React Redux.{"\n"}
                     </MoreExpCardDesc>}
                     {showExp3 && <StackRow>
-                        <TechChip variant="outlined" label="Apollo"/>
-                        <TechChip variant="outlined" label="Objective-C"/>
-                        <TechChip variant="outlined" label="PostgreS"/>
-                        <TechChip variant="outlined" label="Rails"/>
-                        <TechChip variant="outlined" label="React"/>
-                        <TechChip variant="outlined" label="Redux"/>
+                        <TechChip variant="outlined" label="Apollo" />
+                        <TechChip variant="outlined" label="Objective-C" />
+                        <TechChip variant="outlined" label="PostgreS" />
+                        <TechChip variant="outlined" label="Rails" />
+                        <TechChip variant="outlined" label="React" />
+                        <TechChip variant="outlined" label="Redux" />
                     </StackRow>}
-                    <ShowMoreButton onClick={() => {showExp3 ? setExp3(false) : setExp3(true)}}>
-                        {!showExp3 && <ExpandMoreIcon/>}
-                        {showExp3 && <ExpandLessIcon/>}
+                    <ShowMoreButton onClick={() => { showExp3 ? setExp3(false) : setExp3(true) }}>
+                        {!showExp3 && <ExpandMoreIcon />}
+                        {showExp3 && <ExpandLessIcon />}
                     </ShowMoreButton>
                 </ExpCard>
                 <ExpCard>
-                    <OpenNewButton onClick={() => {window.open('https://cooperators.ca', '_blank')}}>
-                        <OpenNewIcon/>
+                    <OpenNewButton onClick={() => { window.open('https://cooperators.ca', '_blank') }}>
+                        <OpenNewIcon />
                     </OpenNewButton>
                     <ExpCardTitle>The Co-operators</ExpCardTitle>
                     <ExpCardSubtitle>Software Developer Intern</ExpCardSubtitle>
@@ -78,20 +75,20 @@ const ExperiencePage = () => {
                         • Developed RESTful API backend with Node.js, Express, and PostgreS.{"\n"}
                     </MoreExpCardDesc>}
                     {showExp2 && <StackRow>
-                        <TechChip variant="outlined" label="Angular"/>
-                        <TechChip variant="outlined" label="Express"/>
-                        <TechChip variant="outlined" label="Ionic"/>
-                        <TechChip variant="outlined" label="Node.js"/>
-                        <TechChip variant="outlined" label="PostgreS"/>
+                        <TechChip variant="outlined" label="Angular" />
+                        <TechChip variant="outlined" label="Express" />
+                        <TechChip variant="outlined" label="Ionic" />
+                        <TechChip variant="outlined" label="Node.js" />
+                        <TechChip variant="outlined" label="PostgreS" />
                     </StackRow>}
-                    <ShowMoreButton onClick={() => {showExp2 ? setExp2(false) : setExp2(true)}}>
-                        {!showExp2 && <ExpandMoreIcon/>}
-                        {showExp2 && <ExpandLessIcon/>}
+                    <ShowMoreButton onClick={() => { showExp2 ? setExp2(false) : setExp2(true) }}>
+                        {!showExp2 && <ExpandMoreIcon />}
+                        {showExp2 && <ExpandLessIcon />}
                     </ShowMoreButton>
                 </ExpCard>
                 <ExpCard>
-                    <OpenNewButton onClick={() => {window.open('https://procom.ca', '_blank')}}>
-                        <OpenNewIcon/>
+                    <OpenNewButton onClick={() => { window.open('https://procom.ca', '_blank') }}>
+                        <OpenNewIcon />
                     </OpenNewButton>
                     <ExpCardTitle>Procom</ExpCardTitle>
                     <ExpCardSubtitle>Jr. Network Administrator</ExpCardSubtitle>
@@ -103,12 +100,12 @@ const ExperiencePage = () => {
                         • Worked with over 400 clients to troubleshoot and repair hardware and software.{"\n"}
                     </MoreExpCardDesc>}
                     {showExp1 && <StackRow>
-                        <TechChip variant="outlined" label="Active Directory"/>
-                        <TechChip variant="outlined" label="Powershell"/>
+                        <TechChip variant="outlined" label="Active Directory" />
+                        <TechChip variant="outlined" label="Powershell" />
                     </StackRow>}
-                    <ShowMoreButton onClick={() => {showExp1 ? setExp1(false) : setExp1(true)}}>
-                        {!showExp1 && <ExpandMoreIcon/>}
-                        {showExp1 && <ExpandLessIcon/>}
+                    <ShowMoreButton onClick={() => { showExp1 ? setExp1(false) : setExp1(true) }}>
+                        {!showExp1 && <ExpandMoreIcon />}
+                        {showExp1 && <ExpandLessIcon />}
                     </ShowMoreButton>
                 </ExpCard>
             </ExpCards>
@@ -116,41 +113,56 @@ const ExperiencePage = () => {
             <SecondaryTitle>Projects</SecondaryTitle>
             <ExpCards>
                 <ExpCard>
-                    <OpenNewButton onClick={() => {window.open('https://github.com/ethanjiang4/iMagic', '_blank')}}>
-                        <OpenNewIcon/>
+                    <OpenNewButton onClick={() => { window.open('https://github.com/ethanjiang4/iMagic', '_blank') }}>
+                        <OpenNewIcon />
                     </OpenNewButton>
                     <ExpCardTitle>iMagic</ExpCardTitle>
                     <ExpCardSubtitle>iOS App for Performing Magic</ExpCardSubtitle>
                     <ExpCardDesc>
-                    • iOS app to assist magicians in a variety of prediction and mind-reading illusions
+                        • iOS app to assist magicians in a variety of prediction and mind-reading illusions
                     with custom preferences.{"\n"}
-                    • Used in over 15 private magic shows with 400+ audience members.{"\n"}
-                    • Built with Swift with ARKit integration in progress.{"\n"}
+                        • Used in over 15 private magic shows with 400+ audience members.{"\n"}
+                        • Built with Swift with ARKit integration in progress.{"\n"}
                     </ExpCardDesc>
                     <ProjectRow>
-                        <TechChip variant="outlined" label="ARKit"/>
-                        <TechChip variant="outlined" label="Swift"/>
+                        <TechChip variant="outlined" label="ARKit" />
+                        <TechChip variant="outlined" label="Swift" />
                     </ProjectRow>
                 </ExpCard>
                 <ExpCard>
-                    <OpenNewButton onClick={() => {window.open('https://github.com/chronovise/Chronovise', '_blank')}}>
-                        <OpenNewIcon/>
+                    <OpenNewButton onClick={() => { window.open('https://github.com/chronovise/Chronovise', '_blank') }}>
+                        <OpenNewIcon />
                     </OpenNewButton>
                     <ExpCardTitle>Chronovise</ExpCardTitle>
                     <ExpCardSubtitle>Productivity Chrome Extension</ExpCardSubtitle>
                     <ExpCardDesc>Hack The North 2018</ExpCardDesc>
                     <ExpCardDesc>
-                    • Productivity Chrome extension designed to organize and edit sets of websites.{"\n"}
-                    • Synced user data to Google account for cross-platform support.{"\n"}
-                    • Designed UI/UX, logo, and developed product website.{"\n"}
-                    • Built with HTML/CSS/JS, Bootstrap, Google Chrome API, Google Cloud Storage.{"\n"}
+                        • Productivity Chrome extension designed to organize and edit sets of websites.{"\n"}
+                        • Synced user data to Google account for cross-platform support.{"\n"}
+                        • Designed UI/UX, logo, and developed product website.{"\n"}
+                        • Built with HTML/CSS/JS, Bootstrap, Google Chrome API, Google Cloud Storage.{"\n"}
                     </ExpCardDesc>
                     <ProjectRow>
-                        <TechChip variant="outlined" label="Bootstrap"/>
-                        <TechChip variant="outlined" label="Google Chrome API"/>
-                        <TechChip variant="outlined" label="Google Cloud Storage"/>
-                        <TechChip variant="outlined" label="Photoshop"/>
+                        <TechChip variant="outlined" label="Bootstrap" />
+                        <TechChip variant="outlined" label="Google Chrome API" />
+                        <TechChip variant="outlined" label="Google Cloud Storage" />
+                        <TechChip variant="outlined" label="Photoshop" />
                     </ProjectRow>
+                </ExpCard>
+            </ExpCards>
+
+            <SecondaryTitle>Education</SecondaryTitle>
+            <ExpCards>
+                <ExpCard>
+                    <OpenNewButton onClick={() => { window.open('https://uwaterloo.ca/', '_blank') }}>
+                        <OpenNewIcon />
+                    </OpenNewButton>
+                    <ExpCardTitle>University of Waterloo</ExpCardTitle>
+                    <ExpCardSubtitle>Bachelor of Honours Computer Science</ExpCardSubtitle>
+                    <ExpCardDesc>
+                        2017 - 2022 (exp.)
+                    </ExpCardDesc>
+                    <ProjectRow/>
                 </ExpCard>
             </ExpCards>
         </Wrapper>
@@ -166,20 +178,25 @@ const Wrapper = styled.div`
 const MainTitle = styled.div`
     font-family: Airbnb Cereal App Extra Bold;
     font-size: 70px;
-    color: #e6f4f5;
+    color: #fff1e0;
 
     text-align: center;
 
     position: relative;
-    margin-top: 8%;
+    margin-top: 100px;
 
     animation: 1.5s ${fade};
+
+    @media (max-width: 700px) {
+        font-size: 50px;
+        margin-top: 50px;
+    }
 `;
 
 const SecondaryTitle = styled.div`
     font-family: Airbnb Cereal App Extra Bold;
     font-size: 55px;
-    color: #e6f4f5;
+    color: #fff1e0;
 
     text-align: center;
 
@@ -216,14 +233,19 @@ const ExpCard = styled(Paper)`
 const ExpCardTitle = styled.div`
     font-family: Airbnb Cereal App Bold;
     font-size: 40px;
-    color: #e6f4f5;
+    margin-right: 15px;
+    color: #fff1e0;
     text-align: left;
+
+    @media (max-width: 700px) {
+        font-size: 35px;
+    }
 `;
 
 const ExpCardSubtitle = styled.div`
     font-family: Airbnb Cereal App Medium;
     font-size: 25px;
-    color: #e6f4f5;
+    color: #fff1e0;
     margin-top: 5px;
     text-align: left;
 `;
@@ -231,7 +253,7 @@ const ExpCardSubtitle = styled.div`
 const ExpCardDesc = styled.div`
     font-family: Airbnb Cereal App Book;
     font-size: 20px;
-    color: #e6f4f5;
+    color: #fff1e0;
     margin-top: 5px;
     text-align: left;
     white-space: pre-wrap;
@@ -242,7 +264,7 @@ const MoreExpCardDesc = styled(ExpCardDesc)`
 `;
 
 const ShowMoreButton = styled(Button)`
-    color: #e6f4f5 !important;
+    color: #fff1e0 !important;
     width: 20%;
 `;
 
@@ -259,8 +281,8 @@ const ProjectRow = styled(StackRow)`
 `;
 
 const TechChip = styled(Chip)`
-    color: #e6f4f5 !important;
-    border-color: #e6f4f5 !important;
+    color: #fff1e0 !important;
+    border-color: #fff1e0 !important;
     font-family: Airbnb Cereal App Medium !important;
     font-size: 15px !important;
     padding-bottom: 1px !important;
@@ -269,11 +291,11 @@ const TechChip = styled(Chip)`
 `;
 
 const OpenNewIcon = styled(OpenInNewIcon)`
-    color: #e6f4f5 !important;
+    color: #fff1e0 !important;
 `;
 
 const OpenNewButton = styled(Button)`
-    color: #e6f4f5 !important;
+    color: #fff1e0 !important;
     position: absolute !important;
     top: 0px !important;
     right: 0px !important;

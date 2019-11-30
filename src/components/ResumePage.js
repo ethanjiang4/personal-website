@@ -1,4 +1,4 @@
-import React, { setState } from 'react';
+import React from 'react';
 import Button from '@material-ui/core/Button';
 import styled from 'styled-components';
 import { fade, delayFade } from './fades';
@@ -34,14 +34,19 @@ const Wrapper = styled.div`
 const MainTitle = styled.div`
     font-family: Airbnb Cereal App Extra Bold;
     font-size: 70px;
-    color: #e6f4f5;
+    color: #fff1e0;
 
     text-align: center;
 
     position: relative;
-    margin-top: 8%;
+    margin-top: 100px;
 
     animation: 1.5s ${fade};
+
+    @media (max-width: 700px) {
+        font-size: 50px;
+        margin-top: 50px;
+    }
 `;
 
 const ResumeContainer = styled.div`
@@ -56,13 +61,16 @@ const ResumeContainer = styled.div`
 `;
 
 const Resume = styled.img`
-    width: 60%;
+    width: 75%;
+    @media (max-width: 700px) {
+        width: 90%;
+    }
 `;
 
 const DownloadButton = styled(Button)`
     font-family: Airbnb Cereal App Book !important;
     font-size: 20px !important;
-    color: #e6f4f5 !important   ;
+    color: #fff1e0 !important   ;
     height: 60px !important;
     margin-bottom: 20px !important;
 `;

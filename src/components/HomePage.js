@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import styled, { keyframes } from 'styled-components';
+import React from 'react';
+import styled from 'styled-components';
 import { fade, delayFade } from './fades';
 
 const HomePage = () => {
@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 const MainTitle = styled.div`
     font-family: Airbnb Cereal App Extra Bold;
     font-size: 100px;
-    color: #e6f4f5;
+    color: #fff1e0;
 
     text-align: center;
 
@@ -28,12 +28,16 @@ const MainTitle = styled.div`
     margin-top: 15%;
 
     animation: 1.5s ${fade};
+
+    @media (max-width: 700px) {
+        font-size: 60px;
+    }
 `;
 
 const Subtitle = styled.div`
     font-family: Airbnb Cereal App Medium;
     font-size: 30px;
-    color: #e6f4f5;
+    color: #fff1e0;
 
     text-align: center;
 
