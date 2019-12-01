@@ -54,6 +54,7 @@ const Subtitle = styled.div`
         font-size: 22px;
         padding-left: 10%;
         padding-right: 10%;
+        margin-bottom: 15px;
     }
 `;
 

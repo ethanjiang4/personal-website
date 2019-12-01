@@ -64,7 +64,7 @@ const ExperiencePage = () => {
                     <OpenNewButton onClick={() => { window.open('https://cooperators.ca', '_blank') }}>
                         <OpenNewIcon />
                     </OpenNewButton>
-                    <ExpCardTitle>The Co-operators</ExpCardTitle>
+                    <ExpCardTitle>The <span style={{whiteSpace: 'nowrap'}}>Co-operators</span></ExpCardTitle>
                     <ExpCardSubtitle>Software Developer Intern</ExpCardSubtitle>
                     <ExpCardDesc>Kitchener, ON, Canada</ExpCardDesc>
                     <ExpCardDesc>Winter 2019</ExpCardDesc>
