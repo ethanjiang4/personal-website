@@ -7,7 +7,7 @@ const AboutPage = () => {
         <Wrapper>
             <MainTitle>About</MainTitle>
             <Subtitle>I'm Ethan Jiang, a third year Computer Science student at UWaterloo graduating in 2022. I have experience building REST APIs, full stack web apps, native iOS apps, and websites. I'm an all-around software generalist who loves picking up new things.</Subtitle>
-            <Subtitle>Aside from software engineering, I have over 5 years of experience with competitive public speaking, debate, and Model United Nations. I've also been performing magic and cardistry for over 6 years, and I'm the President of the UWaterloo Magic & Cardistry Club!</Subtitle>
+            <Subtitle2>Aside from software engineering, I have over 5 years of experience with competitive public speaking, debate, and Model United Nations. I've also been performing magic and cardistry for over 6 years, and I'm the President of the UWaterloo Magic & Cardistry Club!</Subtitle2>
         </Wrapper>
     )
 }
@@ -15,7 +15,6 @@ const AboutPage = () => {
 const Wrapper = styled.div`
     position: absolute;
     min-height: 100vh;
-    padding-bottom: 30px;
 `;
 
 const MainTitle = styled.div`
@@ -56,6 +55,12 @@ const Subtitle = styled.div`
         padding-left: 10%;
         padding-right: 10%;
         margin-bottom: 15px;
+    }
+`;
+
+const Subtitle2 = styled(Subtitle)`
+    @media (max-width: 700px) {
+        padding-bottom: 30px;
     }
 `;
 
