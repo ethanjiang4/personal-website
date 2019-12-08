@@ -14,7 +14,8 @@ const AboutPage = () => {
 
 const Wrapper = styled.div`
     position: absolute;
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 30px;
 `;
 
 const MainTitle = styled.div`
