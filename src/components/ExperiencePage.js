@@ -172,7 +172,7 @@ const ExperiencePage = () => {
 const Wrapper = styled.div`
     position: absolute;
     min-height: 100vh;
-    width: 100vw;
+    min-width: 100vw;
     padding-bottom: 15px;
 `;
 
