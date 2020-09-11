@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button'
 import Chip from '@material-ui/core/Chip';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
-import HourglassEmptyIcon from '@material-ui/icons/HourglassEmpty';
+//import HourglassEmptyIcon from '@material-ui/icons/HourglassEmpty';
 import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 import Paper from '@material-ui/core/Paper';
 import { fade, delayFade } from './fades';
