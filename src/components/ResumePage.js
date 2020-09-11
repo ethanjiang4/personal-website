@@ -28,7 +28,7 @@ const ResumePage = () => {
 const Wrapper = styled.div`
     position: absolute;
     min-height: 100vh;
-    min-width: 100vw;
+    min-width: 100%;
     padding-bottom: 15px;
 `;
 

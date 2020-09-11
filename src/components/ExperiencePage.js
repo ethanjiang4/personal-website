@@ -19,7 +19,7 @@ const ExperiencePage = () => {
         <Wrapper>
             <MainTitle>Experience</MainTitle>
             <ExpCards>
-                <ExpCard>
+                {/* <ExpCard>
                     <OpenNewButton onClick={() => { window.open('https://joinhoney.com', '_blank') }}>
                         <OpenNewIcon />
                     </OpenNewButton>
@@ -30,7 +30,7 @@ const ExperiencePage = () => {
                     <ShowMoreButton>
                         <HourglassEmptyIcon />
                     </ShowMoreButton>
-                </ExpCard>
+                </ExpCard> */}
                 <ExpCard>
                     <OpenNewButton onClick={() => { window.open('https://hyperpad.com', '_blank') }}>
                         <OpenNewIcon />
@@ -172,7 +172,7 @@ const ExperiencePage = () => {
 const Wrapper = styled.div`
     position: absolute;
     min-height: 100vh;
-    min-width: 100vw;
+    min-width: 100%;
     padding-bottom: 15px;
 `;
 
