@@ -4,7 +4,6 @@ import Button from '@material-ui/core/Button'
 import Chip from '@material-ui/core/Chip';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
-//import HourglassEmptyIcon from '@material-ui/icons/HourglassEmpty';
 import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 import Paper from '@material-ui/core/Paper';
 import { fade, delayFade } from './fades';
@@ -13,24 +12,38 @@ const ExperiencePage = () => {
     const [showExp1, setExp1] = useState(false);
     const [showExp2, setExp2] = useState(false);
     const [showExp3, setExp3] = useState(false);
-    // const [showExp4, setExp4] = useState(false);
+    const [showExp4, setExp4] = useState(false);
 
     return (
         <Wrapper>
             <MainTitle>Experience</MainTitle>
             <ExpCards>
-                {/* <ExpCard>
+                <ExpCard>
                     <OpenNewButton onClick={() => { window.open('https://joinhoney.com', '_blank') }}>
                         <OpenNewIcon />
                     </OpenNewButton>
-                    <ExpCardTitle>Honey</ExpCardTitle>
-                    <ExpCardSubtitle>Software Engineering Intern (Incoming)</ExpCardSubtitle>
+                    <ExpCardTitle>Honey/Paypal</ExpCardTitle>
+                    <ExpCardSubtitle>Software Engineering Intern, Core Architecture</ExpCardSubtitle>
+                    <ExpCardDesc>Remote</ExpCardDesc>
                     <ExpCardDesc>Los Angeles, CA, USA</ExpCardDesc>
-                    <ExpCardDesc>Summer 2020</ExpCardDesc>
-                    <ShowMoreButton>
-                        <HourglassEmptyIcon />
+                    <ExpCardDesc>Jan - Apr 2021</ExpCardDesc>
+                    {showExp4 && <MoreExpCardDesc>
+                        • Built internal incident analysis tool to query, filter, and display over 50,000 Datadog events a day with React and Node.js. {"\n"}
+                        • Developed internal Node.js package to trigger integration tests from CircleCI and retrieve results from Google Cloud Storage, used by Honey's GraphQL Federation and users API. {"\n"}
+                        • Upgraded Honey's testing infrastructure with customizable Kubernetes environment variables, customizable Spinnaker pipelines for direct load balancer testing, and a UI overhaul for Honey's internal testing dashboard with React.{"\n"}
+                    </MoreExpCardDesc>}
+                    {showExp4 && <StackRow>
+                        <TechChip variant="outlined" label="GraphQL" />
+                        <TechChip variant="outlined" label="Kubernetes" />
+                        <TechChip variant="outlined" label="Node.js" />
+                        <TechChip variant="outlined" label="React" />
+                        <TechChip variant="outlined" label="Spinnaker" />
+                    </StackRow>}
+                    <ShowMoreButton onClick={() => { showExp4 ? setExp4(false) : setExp4(true) }}>
+                        {!showExp4 && <ExpandMoreIcon />}
+                        {showExp4 && <ExpandLessIcon />}
                     </ShowMoreButton>
-                </ExpCard> */}
+                </ExpCard>
                 <ExpCard>
                     <OpenNewButton onClick={() => { window.open('https://hyperpad.com', '_blank') }}>
                         <OpenNewIcon />
@@ -38,7 +51,7 @@ const ExperiencePage = () => {
                     <ExpCardTitle>hyperPad</ExpCardTitle>
                     <ExpCardSubtitle>Full Stack Software Engineering Intern</ExpCardSubtitle>
                     <ExpCardDesc>London, ON, Canada</ExpCardDesc>
-                    <ExpCardDesc>Fall 2019</ExpCardDesc>
+                    <ExpCardDesc>Sept - Dec 2019</ExpCardDesc>
                     {showExp3 && <MoreExpCardDesc>
                         • Architected commenting and user API for hyperPad’s game sharing native hub
                         of 10,000 users with Objective-C and Ruby on Rails. {"\n"}
@@ -48,7 +61,7 @@ const ExperiencePage = () => {
                         with React and React Redux.{"\n"}
                     </MoreExpCardDesc>}
                     {showExp3 && <StackRow>
-                        <TechChip variant="outlined" label="Apollo" />
+                        <TechChip variant="outlined" label="GraphQL" />
                         <TechChip variant="outlined" label="Objective-C" />
                         <TechChip variant="outlined" label="PostgreS" />
                         <TechChip variant="outlined" label="Rails" />
@@ -67,7 +80,7 @@ const ExperiencePage = () => {
                     <ExpCardTitle>The <span style={{whiteSpace: 'nowrap'}}>Co-operators</span></ExpCardTitle>
                     <ExpCardSubtitle>Software Developer Intern</ExpCardSubtitle>
                     <ExpCardDesc>Kitchener, ON, Canada</ExpCardDesc>
-                    <ExpCardDesc>Winter 2019</ExpCardDesc>
+                    <ExpCardDesc>Jan - Apr 2019</ExpCardDesc>
                     {showExp2 && <MoreExpCardDesc>
                         • Team lead for cross-platform enterprise web app reaching 2000 employees.{"\n"}
                         • Replaced legacy software; sped up insurance prospecting process by 50%.{"\n"}
@@ -93,7 +106,7 @@ const ExperiencePage = () => {
                     <ExpCardTitle>Procom</ExpCardTitle>
                     <ExpCardSubtitle>Jr. Network Administrator</ExpCardSubtitle>
                     <ExpCardDesc>Toronto, ON, Canada</ExpCardDesc>
-                    <ExpCardDesc>Summer 2018</ExpCardDesc>
+                    <ExpCardDesc>May - Aug 2018</ExpCardDesc>
                     {showExp1 && <MoreExpCardDesc>
                         • Automated unlocking computers, performing status checks, and Active Directory
                         administration by developing Powershell scripts. {"\n"}
