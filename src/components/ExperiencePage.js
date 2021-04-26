@@ -49,7 +49,7 @@ const ExperiencePage = () => {
                         <OpenNewIcon />
                     </OpenNewButton>
                     <ExpCardTitle>hyperPad</ExpCardTitle>
-                    <ExpCardSubtitle>Full Stack Software Engineering Intern</ExpCardSubtitle>
+                    <ExpCardSubtitle>Software Engineering Intern, Full Stack</ExpCardSubtitle>
                     <ExpCardDesc>London, ON, Canada</ExpCardDesc>
                     <ExpCardDesc>Sept - Dec 2019</ExpCardDesc>
                     {showExp3 && <MoreExpCardDesc>

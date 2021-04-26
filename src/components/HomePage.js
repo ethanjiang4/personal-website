@@ -6,7 +6,7 @@ const HomePage = () => {
     return(
         <Wrapper>
             <MainTitle>Hey, I'm Ethan!</MainTitle>
-            <Subtitle>Welcome to my site. I'm a third year UWaterloo Computer Science student.</Subtitle>
+            <Subtitle>Welcome to my site. I'm a fourth year UWaterloo Computer Science student, graduating in Spring 2022.</Subtitle>
         </Wrapper>
     )
 }
