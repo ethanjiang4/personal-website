@@ -13,17 +13,35 @@ const ExperiencePage = () => {
     const [showExp2, setExp2] = useState(false);
     const [showExp3, setExp3] = useState(false);
     const [showExp4, setExp4] = useState(false);
+    const [showExp5, setExp5] = useState(false);
 
     return (
         <Wrapper>
             <MainTitle>Experience</MainTitle>
             <ExpCards>
+            <ExpCard>
+                    <OpenNewButton onClick={() => { window.open('https://joinhoney.com', '_blank') }}>
+                        <OpenNewIcon />
+                    </OpenNewButton>
+                    <ExpCardTitle>Paypal</ExpCardTitle>
+                    <ExpCardSubtitle>Honey Software Engineering Intern, Core</ExpCardSubtitle>
+                    <ExpCardDesc>Remote</ExpCardDesc>
+                    <ExpCardDesc>Los Angeles, CA, USA</ExpCardDesc>
+                    <ExpCardDesc>Sept - Dec 2021</ExpCardDesc>
+                    {showExp5 && <MoreExpCardDesc>
+                        • Currently working hard!{"\n"}
+                    </MoreExpCardDesc>}
+                    <ShowMoreButton onClick={() => { showExp5 ? setExp5(false) : setExp5(true) }}>
+                        {!showExp5 && <ExpandMoreIcon />}
+                        {showExp5 && <ExpandLessIcon />}
+                    </ShowMoreButton>
+                </ExpCard>
                 <ExpCard>
                     <OpenNewButton onClick={() => { window.open('https://joinhoney.com', '_blank') }}>
                         <OpenNewIcon />
                     </OpenNewButton>
-                    <ExpCardTitle>Honey/Paypal</ExpCardTitle>
-                    <ExpCardSubtitle>Software Engineering Intern, Core Architecture</ExpCardSubtitle>
+                    <ExpCardTitle>Paypal</ExpCardTitle>
+                    <ExpCardSubtitle>Honey Software Engineering Intern, Core</ExpCardSubtitle>
                     <ExpCardDesc>Remote</ExpCardDesc>
                     <ExpCardDesc>Los Angeles, CA, USA</ExpCardDesc>
                     <ExpCardDesc>Jan - Apr 2021</ExpCardDesc>
@@ -140,6 +158,25 @@ const ExperiencePage = () => {
                     <ProjectRow>
                         <TechChip variant="outlined" label="ARKit" />
                         <TechChip variant="outlined" label="Swift" />
+                    </ProjectRow>
+                </ExpCard>
+                <ExpCard>
+                    <OpenNewButton onClick={() => { window.open('https://github.com/Stephen-Choi/insurrection', '_blank') }}>
+                        <OpenNewIcon />
+                    </OpenNewButton>
+                    <ExpCardTitle>Insurrection</ExpCardTitle>
+                    <ExpCardSubtitle>Software Architecture Group Project</ExpCardSubtitle>
+                    <ExpCardDesc>
+                        • Mobile version of the deception card game, "Coup" for Android.{"\n"}
+                        • Designed and implemented Firebase Realtime database and networking code for online play.{"\n"}
+                        • Designed and implemented various player actions.{"\n"}
+                        • Received 100% for final documentation and demo.{"\n"}
+                        • <a href="https://play.google.com/store/apps/details?id=com.game.insurrectiongame" target="_blank">Download from Google Play!</a>{"\n"}
+                    </ExpCardDesc>
+                    <ProjectRow>
+                        <TechChip variant="outlined" label="Android" />
+                        <TechChip variant="outlined" label="Firebase" />
+                        <TechChip variant="outlined" label="Kotlin" />
                     </ProjectRow>
                 </ExpCard>
                 <ExpCard>
