@@ -20,7 +20,7 @@ const ExperiencePage = () => {
             <MainTitle>Experience</MainTitle>
             <ExpCards>
             <ExpCard>
-                    <OpenNewButton onClick={() => { window.open('https://joinhoney.com', '_blank') }}>
+                    <OpenNewButton onClick={() => { window.open('https://joinhoney.com', '_blank', 'noopener=yes') }}>
                         <OpenNewIcon />
                     </OpenNewButton>
                     <ExpCardTitle>Paypal</ExpCardTitle>
@@ -37,7 +37,7 @@ const ExperiencePage = () => {
                     </ShowMoreButton>
                 </ExpCard>
                 <ExpCard>
-                    <OpenNewButton onClick={() => { window.open('https://joinhoney.com', '_blank') }}>
+                    <OpenNewButton onClick={() => { window.open('https://joinhoney.com', '_blank', 'noopener=yes') }}>
                         <OpenNewIcon />
                     </OpenNewButton>
                     <ExpCardTitle>Paypal</ExpCardTitle>
@@ -63,7 +63,7 @@ const ExperiencePage = () => {
                     </ShowMoreButton>
                 </ExpCard>
                 <ExpCard>
-                    <OpenNewButton onClick={() => { window.open('https://hyperpad.com', '_blank') }}>
+                    <OpenNewButton onClick={() => { window.open('https://hyperpad.com', '_blank', 'noopener=yes') }}>
                         <OpenNewIcon />
                     </OpenNewButton>
                     <ExpCardTitle>hyperPad</ExpCardTitle>
@@ -92,7 +92,7 @@ const ExperiencePage = () => {
                     </ShowMoreButton>
                 </ExpCard>
                 <ExpCard>
-                    <OpenNewButton onClick={() => { window.open('https://cooperators.ca', '_blank') }}>
+                    <OpenNewButton onClick={() => { window.open('https://cooperators.ca', '_blank', 'noopener=yes') }}>
                         <OpenNewIcon />
                     </OpenNewButton>
                     <ExpCardTitle>The <span style={{whiteSpace: 'nowrap'}}>Co-operators</span></ExpCardTitle>
@@ -118,7 +118,7 @@ const ExperiencePage = () => {
                     </ShowMoreButton>
                 </ExpCard>
                 <ExpCard>
-                    <OpenNewButton onClick={() => { window.open('https://procom.ca', '_blank') }}>
+                    <OpenNewButton onClick={() => { window.open('https://procom.ca', '_blank', 'noopener=yes') }}>
                         <OpenNewIcon />
                     </OpenNewButton>
                     <ExpCardTitle>Procom</ExpCardTitle>
@@ -144,7 +144,7 @@ const ExperiencePage = () => {
             <SecondaryTitle>Projects</SecondaryTitle>
             <ExpCards>
                 <ExpCard>
-                    <OpenNewButton onClick={() => { window.open('https://github.com/ethanjiang4/iMagic', '_blank') }}>
+                    <OpenNewButton onClick={() => { window.open('https://github.com/ethanjiang4/iMagic', '_blank', 'noopener=yes') }}>
                         <OpenNewIcon />
                     </OpenNewButton>
                     <ExpCardTitle>iMagic</ExpCardTitle>
@@ -161,7 +161,7 @@ const ExperiencePage = () => {
                     </ProjectRow>
                 </ExpCard>
                 <ExpCard>
-                    <OpenNewButton onClick={() => { window.open('https://github.com/Stephen-Choi/insurrection', '_blank') }}>
+                    <OpenNewButton onClick={() => { window.open('https://github.com/Stephen-Choi/insurrection', '_blank', 'noopener=yes') }}>
                         <OpenNewIcon />
                     </OpenNewButton>
                     <ExpCardTitle>Insurrection</ExpCardTitle>
@@ -171,7 +171,7 @@ const ExperiencePage = () => {
                         • Designed and implemented Firebase Realtime database and networking code for online play.{"\n"}
                         • Designed and implemented various player actions.{"\n"}
                         • Received 100% for final documentation and demo.{"\n"}
-                        • <a href="https://play.google.com/store/apps/details?id=com.game.insurrectiongame" target="_blank">Download from Google Play!</a>{"\n"}
+                        • <a href="https://play.google.com/store/apps/details?id=com.game.insurrectiongame" target="_blank" rel="noopener noreferrer">Download from Google Play!</a>{"\n"}
                     </ExpCardDesc>
                     <ProjectRow>
                         <TechChip variant="outlined" label="Android" />
@@ -180,7 +180,7 @@ const ExperiencePage = () => {
                     </ProjectRow>
                 </ExpCard>
                 <ExpCard>
-                    <OpenNewButton onClick={() => { window.open('https://github.com/chronovise/Chronovise', '_blank') }}>
+                    <OpenNewButton onClick={() => { window.open('https://github.com/chronovise/Chronovise', '_blank', 'noopener=yes') }}>
                         <OpenNewIcon />
                     </OpenNewButton>
                     <ExpCardTitle>Chronovise</ExpCardTitle>
@@ -204,7 +204,7 @@ const ExperiencePage = () => {
             <SecondaryTitle>Education</SecondaryTitle>
             <ExpCards>
                 <ExpCard>
-                    <OpenNewButton onClick={() => { window.open('https://uwaterloo.ca/', '_blank') }}>
+                    <OpenNewButton onClick={() => { window.open('https://uwaterloo.ca/', '_blank', 'noopener=yes') }}>
                         <OpenNewIcon />
                     </OpenNewButton>
                     <ExpCardTitle>University of Waterloo</ExpCardTitle>
