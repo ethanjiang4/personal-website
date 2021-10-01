@@ -23,7 +23,7 @@ const ExperiencePage = () => {
                     <OpenNewButton onClick={() => { window.open('https://joinhoney.com', '_blank', 'noopener=yes') }}>
                         <OpenNewIcon />
                     </OpenNewButton>
-                    <ExpCardTitle>Paypal</ExpCardTitle>
+                    <ExpCardTitle>PayPal</ExpCardTitle>
                     <ExpCardSubtitle>Honey Software Engineering Intern, Core</ExpCardSubtitle>
                     <ExpCardDesc>Remote</ExpCardDesc>
                     <ExpCardDesc>Los Angeles, CA, USA</ExpCardDesc>
@@ -40,7 +40,7 @@ const ExperiencePage = () => {
                     <OpenNewButton onClick={() => { window.open('https://joinhoney.com', '_blank', 'noopener=yes') }}>
                         <OpenNewIcon />
                     </OpenNewButton>
-                    <ExpCardTitle>Paypal</ExpCardTitle>
+                    <ExpCardTitle>PayPal</ExpCardTitle>
                     <ExpCardSubtitle>Honey Software Engineering Intern, Core</ExpCardSubtitle>
                     <ExpCardDesc>Remote</ExpCardDesc>
                     <ExpCardDesc>Los Angeles, CA, USA</ExpCardDesc>
